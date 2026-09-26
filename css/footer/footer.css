@@ -1,0 +1,31 @@
+.footer{
+    margin-top: 90px;
+    padding: 30px 0;
+    background-color: var(--footer-color);
+    text-align: center;
+}
+
+.footer-title{
+    font-size: 20px;
+    margin-bottom:20px ;
+    color: var(--accent-text-color);
+}
+
+.footer-icon{
+    width: 25px;
+}
+
+.contacts{
+    font-size: 36px;
+    color: var(--base-text-color);
+}
+
+.mail{
+    margin-bottom: 10px;
+}
+
+.footer-stud{
+    padding: 30px 0;
+    background-color: var(--footer-color);
+    text-align: center;
+}
