@@ -1,0 +1,23 @@
+.skils-wrapper{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    flex-wrap: wrap;
+}
+
+.skils-title{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0;
+    color: var(--base-text-color);
+
+}
+
+.skils-icon{
+    color: var(--accent-text-color);
+    text-align: center;
+}
+
+.skils{
+    padding: 30px 0;
+}
