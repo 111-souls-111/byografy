@@ -29,3 +29,33 @@
     background-color: var(--footer-color);
     text-align: center;
 }
+
+@media(max-width:750px){
+.footer{
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: var(--footer-color);
+    text-align: center;
+}
+
+.footer-title{
+    font-size: 20px;
+    margin-bottom:5px ;
+    color: var(--accent-text-color);
+}
+
+.contacts{
+    font-size: 36px;
+    color: var(--base-text-color);
+}
+
+.mail{
+    margin-bottom: 5px;
+}
+
+.footer-stud{
+    padding: 5px 0;
+    background-color: var(--footer-color);
+    text-align: center;
+}
+}

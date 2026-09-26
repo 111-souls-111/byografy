@@ -48,3 +48,49 @@
     background-color: var(--photo-accent-color);
     z-index: -1;              
 } 
+
+@media (max-width: 768px) {
+    .stud {
+        margin-top: 10px;
+        padding-bottom: 250px;
+    }
+
+    .stud-card {
+        flex-direction: column;
+        align-items: center;
+        min-height: auto;
+        gap: 12px;
+    }
+
+    .stud-bio {
+        margin: 24px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .stud-title {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    .stud-desc {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .stud-photo-section {
+        padding-top: 48px;
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .stud-photo {
+        max-width: 240px;
+    }
+
+
+    .stud-photo-section::after {
+       background: none;
+    }
+}

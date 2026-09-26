@@ -1,11 +1,11 @@
 .header-card{
     display: flex;
-    max-height: 360px;
     justify-content: space-between;
 }
 .header-bio{
     color: var(--accent-text-color);
     margin: 96px 0;
+    min-width: 0;
 }
 
 .header-title{
@@ -63,5 +63,54 @@
     z-index: -1;              
 }
 
+
+
+
+@media (max-width: 700px) {
+    .header-card {
+        flex-direction: column-reverse;   
+    }
+
+    .header-bio {
+        margin: 5px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .header-title {
+        font-size: 36px;
+
+    }
+
+    .header-desc {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .location {
+        margin: 24px 0;
+        justify-content: center;
+    }
+
+    .header-photo-section {
+        padding-top: 20px;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-photo {
+        max-width: 240px;
+    }
+
+    .header-photo-section::after {
+        content: '';
+        background: none;
+        top: 50px;
+        left: 185px;
+        min-width: 260px;
+        min-height: 300px;
+    }
+}
 
 

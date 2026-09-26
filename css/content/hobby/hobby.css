@@ -42,3 +42,43 @@
     padding: 30px;
      border-radius: 10px 0 0 10px;
 }
+
+
+
+@media(max-width: 750px) {
+    .hobby-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.hobby{
+    padding: 15px 0;
+}
+
+.hobby-card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:15px ;
+
+}
+
+.hobby-photo{
+    min-width: 150px;
+    border-radius: 10px;
+}
+
+.hobby-desc{
+    border-radius: 0 0 10px 10px;
+    padding-left: 5px;
+}
+
+.hobby-card-title{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.img-wrapper{
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+}
+}
