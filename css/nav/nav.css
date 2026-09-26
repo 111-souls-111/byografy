@@ -1,0 +1,39 @@
+
+
+.nav{
+    padding: 16px 0
+}
+.nav-list{
+    display: flex;
+    justify-content: end;
+}
+
+.nav-list-item{
+    margin-right: 24px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+    
+}
+
+.nav-list-item:last-child{
+    margin-right: 0px;
+}
+
+.nav-link{
+    color: var(--accent-text-color);
+}
+
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Caveat", cursive;
+}
+
+.logo{
+    color: var(--base-text-color);
+    font-size: 40px;
+    line-height: 36px;
+}
+
+
