@@ -1,0 +1,67 @@
+.header-card{
+    display: flex;
+    max-height: 360px;
+    justify-content: space-between;
+}
+.header-bio{
+    color: var(--accent-text-color);
+    margin: 96px 0;
+}
+
+.header-title{
+    font-size: 60px;
+    line-height: 72px;
+    color: var(--base-text-color);
+
+}
+
+.header-desc{
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.location-icon{
+    width: 13px;
+}
+
+.location{
+    margin: 48px 0;
+}
+
+.header-photo{
+    min-width: 210px;
+    border: 6px solid #030712;
+   
+}
+.header-photo-section{
+    padding-top: 110px;
+    margin-left: 48px;
+    z-index: 2;
+    position: relative;
+    
+}
+
+/* .folder{
+    position: absolute;
+    background-color: white;
+    min-width: 210px;
+    min-height: 280px;
+    height: 200px;
+    z-index: 1;
+    top: 160px;
+    right: 250px;
+} */
+
+.header-photo-section::after {
+    content: "";             
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    width: 210px;
+    height: 280px;
+    background-color: #374151;
+    z-index: -1;              
+}
+
+
+
