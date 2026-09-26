@@ -46,5 +46,108 @@
     color: var(--accent-text-color);
 }
 
+/* Активное состояние — крестик */
+.burger.active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
 
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    width: 44px;
+    height: 44px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Три полоски внутри бургера */
+.burger span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--base-text-color);
+    border-radius: 2px;
+    transition: transform 250ms ease, opacity 200ms ease;
+}
+
+@media (max-width: 768px) {
+
+    /* Показываем бургер */
+    .burger {
+        display: flex;
+    }
+
+    /* Меню превращается в выпадающую панель */
+    .nav-list {
+        position: absolute;
+        top: 100%;              /* сразу под шапкой */
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+
+        background-color: #1F2937;   /* под цвет фона — подгоните */
+        border-radius: 0 0 12px 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+        transition: max-height 300ms ease, opacity 250ms ease, transform 250ms ease;
+    }
+
+    /* Открытое состояние */
+    .nav-list.open {
+        max-height: 400px;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+        padding: 12px 0;
+    }
+
+    .nav-list-item {
+        margin-right: 0;
+        font-size: 26px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 12px 0;
+        width: 100%;
+    }
+
+    .nav-link:hover {
+        color: var(--base-text-color);
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+}
+
+/* Мелкие телефоны */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 28px;
+    }
+
+    .nav-list-item {
+        font-size: 22px;
+    }
+}
 
