@@ -22,8 +22,12 @@
 
 .nav-link{
     color: var(--accent-text-color);
+    transition: color 80ms ease-in;
 }
 
+.nav-link:hover{
+    color: var(--base-text-color);
+}
 .nav-wrapper{
     display: flex;
     justify-content: space-between;
@@ -34,6 +38,13 @@
     color: var(--base-text-color);
     font-size: 40px;
     line-height: 36px;
+    cursor: pointer;
+    transition: color 80ms ease-in;
 }
+
+.logo:hover{
+    color: var(--accent-text-color);
+}
+
 
 

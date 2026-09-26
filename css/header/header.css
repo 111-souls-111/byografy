@@ -30,7 +30,7 @@
 
 .header-photo{
     min-width: 210px;
-    border: 6px solid #030712;
+    border: 6px solid var(--background-color);
    
 }
 .header-photo-section{
