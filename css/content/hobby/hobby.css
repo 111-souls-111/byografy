@@ -23,6 +23,21 @@
 .hobby-photo{
     min-width: 350px;
     border-radius: 10px;
+    display: block
+}
+
+.img-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 15px;                       
+    border: 7px solid var(--base-text-color); 
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 250ms ease;            
+}
+
+.img-wrapper:hover::after {
+    opacity: 1;
 }
 
 .hobby-desc{
@@ -30,6 +45,13 @@
     background-color: var(--photo-accent-color);
     border-radius: 0 10px 10px 0;
     padding-left: 10px;
+
+    filter: blur(1px);
+    transition: filter 300ms ease;
+}
+
+.hobby-desc:hover {
+    filter: blur(0);
 }
 
 .hobby-card-title{
@@ -40,7 +62,8 @@
 .img-wrapper{
     background-color: var(--footer-color);
     padding: 30px;
-     border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px;
+    position: relative;
 }
 
 
