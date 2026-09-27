@@ -1,32 +1,25 @@
-function write(el){
-document.addEventListener('DOMContentLoaded', () => {
+'use strict'
+
+export function write(el){
    
+    
 
-    if (!el) return;
+        if (!el) return;
 
-    const text = el.dataset.text || ''
-    const speed = 5;
-    const start = 5
+        const text = (el.dataset.text || '').replace(/\s+/g, ' ').trim();
+        const speed = 5;
+        const start = 5
 
-    let i = 0;
+        let i = 0;
 
-    function type() {
-        if (i < text.length) {
-            el.textContent += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
+        function type() {
+            if (i < text.length) {
+                el.textContent += text.charAt(i);
+                i++;
+                setTimeout(type, speed);
+            }
         }
-        // else{
-        //     el.style.borderRight = 'none'
-        // }
-    }
 
-    setTimeout(type,start)
-
-})
+        setTimeout(type,start)
 }
 
-const el1 = document.querySelector('.header-desc');
-const el2 = document.querySelector('.stud-desc');
-write(el1)
-write(el2)

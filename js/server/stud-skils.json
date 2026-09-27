@@ -1,0 +1,30 @@
+[
+    {
+        "id": "Javascript",
+        "img": "../imgs/skils/icon-javscript.svg"
+    },
+        {
+        "id": "Typescript",
+        "img": "../imgs/skils/icon-typescript.svg"
+    },
+        {
+        "id": "React",
+        "img": "../imgs/skils/icon-react.svg"
+    },
+        {
+        "id": "Git",
+        "img": "../imgs/skils/icon-git.svg"
+    },
+        {
+        "id": "Figma",
+        "img": "../imgs/skils/icon-figma.svg"
+    },
+        {
+        "id": "Saas",
+        "img": "../imgs/skils/icon-sass.svg"
+    },
+            {
+        "id": "NextJs",
+        "img": "../imgs/skils/icon-nextjs.svg"
+    }
+]
